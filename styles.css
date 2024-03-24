@@ -1,0 +1,158 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Uchen", serif; /* Default font for the entire page */
+}
+
+/* Styling for the entire content area */
+.all-content {
+    background: #2e1700; /* Dark brown background color */
+}
+
+/* Navbar Styles */
+.navbar {
+    border-color: #573818; /* Dark brown border color */
+    padding-left: 50px; /* Left padding */
+    font-weight: bold; /* Bold font */
+}
+
+/* Logo Styles */
+#logo {
+    font-size: 23px; /* Logo font size */
+    color: white; /* White color */
+}
+
+/* Logo Image Styles */
+#logo img {
+    margin-bottom: 15px; /* Margin below the logo image */
+}
+
+/* Navbar Links Styles */
+.navbar-nav {
+    margin-left: 10px; /* Left margin for navbar links */
+}
+
+.nav-link {
+    color: white; /* White color for navbar links */
+    font-weight: bold; /* Bold font */
+    text-shadow: 1px 1px 1px black; /* Text shadow for better visibility */
+    margin-left: 15px; /* Left margin for navbar links */
+    transition: 0.5s ease; /* Smooth transition effect */
+}
+
+.nav-link:hover {
+    background-color: rgba(161, 109, 14, 1); /* Darker brown background color on hover */
+    color: white; /* White color on hover */
+    border-radius: 5px; /* Rounded border on hover */
+}
+
+/* Media Query for Responsive Logo Size */
+@media screen and (max-width:330px) {
+    #logo {
+        font-size: 15px; /* Adjusted font size for smaller screens */
+    }
+}
+
+/* Circular Image Gallery Styles */
+.circular-frame {
+    width: 150px; /* Circular frame width */
+    height: 150px; /* Circular frame height */
+    border: 2px solid #000; /* Circular outline with black color */
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden; /* Hide overflowing content */
+    margin: 10px; /* Margin around circular frames */
+    display: inline-block; /* Display as inline-block */
+    transition: border-color 0.3s ease; /* Smooth transition for border color on hover */
+}
+
+.circular-frame img {
+    width: 100%; /* Image width */
+    height: 100%; /* Image height */
+    object-fit: cover; /* Cover the circular frame with the image */
+    transition: transform 0.3s ease; /* Smooth transition for image scale on hover */
+}
+
+.circular-frame:hover {
+    border-color: #ff9900; /* Change border color to orange on hover */
+}
+
+.circular-frame:hover img {
+    transform: scale(1.1); /* Scale up image on hover */
+}
+
+/* Custom Button Styles */
+.btn-read-more {
+    background-color: transparent; /* Transparent background */
+    color: #8B4513; /* Brown text color */
+    border: 2px solid #8B4513; /* Brown border */
+    padding: 10px 20px; /* Padding for the button */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded border */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+.btn-read-more:hover {
+    background-color: #d2b48c; /* Light brown background color on hover */
+    color: #fff; /* White text color on hover */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #d2b48c; /* Light brown background color */
+    color: #fff; /* White text color */
+    padding: 20px; /* Padding for the footer */
+    text-align: center; /* Center-align text */
+}
+
+/* Footer Logo Styles */
+.footer-logo {
+    width: 100px; /* Logo width */
+    height: auto; /* Auto height */
+    margin-bottom: 20px; /* Margin bottom for the logo */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+.footer-logo:hover {
+    transform: scale(1.2); /* Increase logo size on hover */
+}
+
+/* Company Info Styles */
+.company-info {
+    margin-bottom: 20px; /* Margin bottom for company info */
+}
+
+/* Quick Contact Form Styles */
+.quick-contact-form {
+    display: flex; /* Display as flex */
+    justify-content: center; /* Center-align content horizontally */
+    align-items: center; /* Center-align content vertically */
+}
+
+.quick-contact-form input[type="text"],
+.quick-contact-form input[type="email"],
+.quick-contact-form textarea {
+    width: 250px; /* Input width */
+    padding: 10px; /* Padding for inputs */
+    margin: 5px; /* Margin for inputs */
+    border-radius: 5px; /* Rounded border */
+    border: 1px solid #000; /* Black border */
+}
+
+.quick-contact-form button[type="submit"] {
+    padding: 10px 20px; /* Padding for the button */
+    margin: 5px; /* Margin for the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded border */
+    cursor: pointer; /* Cursor style */
+}
+
+/* Additional spacing for body content and footer */
+.container.my-5 {
+    margin-bottom: 20px; /* Bottom margin for body content */
+}
+
+footer.footer {
+    margin-top: 20px; /* Top margin for footer */
+}
